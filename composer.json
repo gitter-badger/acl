@@ -1,0 +1,25 @@
+{
+    "name": "park-manager/acl",
+    "description": "Provides a simple yet powerful ACL library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sebastiaan Stok",
+            "email": "s.stok@rollerscapes.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ParkManager\\Component\\Acl\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ParkManager\\Component\\Acl\\Tests\\": "tests/"
+        }
+    }
+}
