@@ -16,13 +16,32 @@ use ParkManager\Component\Acl\Resource\ModuleId;
 final class SimpleModuleSchema implements ModuleSchema
 {
     /**
+     * @var ModuleId
+     */
+    private $id;
+
+    /**
+     * @var array|string[]
+     */
+    private $actions;
+
+    /**
+     * @param ModuleId $id
+     * @param string[] $actions
+     */
+    public function __construct(ModuleId $id, array $actions)
+    {
+        $this->id = $id;
+        $this->actions = $actions;
+    }
+
+    /**
      * Returns the module-id of this schema.
      *
      * @return ModuleId
      */
     public function getId()
     {
-        // TODO: Implement getId() method.
     }
 
     /**
@@ -32,7 +51,6 @@ final class SimpleModuleSchema implements ModuleSchema
      */
     public function getActions()
     {
-        // TODO: Implement getActions() method.
     }
 
     /**
@@ -47,6 +65,5 @@ final class SimpleModuleSchema implements ModuleSchema
      */
     public function supportsAction($actions)
     {
-        // TODO: Implement supportsAction() method.
     }
 }
