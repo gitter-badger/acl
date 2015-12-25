@@ -1,6 +1,8 @@
 ParkManager ACL Component
 =========================
 
+[![Join the chat at https://gitter.im/park-manager/acl](https://badges.gitter.im/park-manager/acl.svg)](https://gitter.im/park-manager/acl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The ParkManager ACL Security Component provides a simple yet powerful
 ACL library for PHP.
 
